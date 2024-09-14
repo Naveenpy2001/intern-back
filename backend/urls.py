@@ -24,6 +24,6 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^.*$', index),
+    # re_path(r'^.*$', index),
     path('api/',include('app.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
