@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate</title>
+    <style>
+        .certificate-container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-image: url('../media/certificate.jpg'); /* Path to your background image */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        /* Centering the name vertically and horizontally */
+        .user-name {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            font-weight: bold;
+            color: #000; /* Adjust based on your background for better visibility */
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate-container">
+        <!-- User name centered on the background -->
+        <div class="user-name">{{ name }}</div>
+    </div>
+</body>
+</html>
