@@ -14,8 +14,8 @@ from django.conf import settings
 
 from django.shortcuts import render
 
-def index(request):
-    return render(request, 'index.html')
+# def index(request):
+#     return render(request, 'index.html')
 
 @api_view(['GET'])
 def check_registration_status(request, email):
